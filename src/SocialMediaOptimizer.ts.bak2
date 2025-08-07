@@ -2,7 +2,7 @@ import {
   OptimizationPlugin, 
   OptimizationContext, 
   OptimizationResult 
-} from './types';
+} from '@listenrightmeow/newk/plugin/OptimizationPlugin';
 import { FaviconGenerator } from './FaviconGenerator.js';
 import { OGImageGenerator } from './OGImageGenerator.js';
 import { SocialMediaComponentGenerator } from './SocialMediaComponentGenerator.js';
@@ -16,10 +16,6 @@ export class SocialMediaOptimizer implements OptimizationPlugin {
   private favicon = new FaviconGenerator();
   private ogImage = new OGImageGenerator();
   private components = new SocialMediaComponentGenerator();
-
-  async apply(context: OptimizationContext): Promise<OptimizationResult> {
-    return this.optimize(context);
-  }
 
   async isApplicable(_context: OptimizationContext): Promise<boolean> {
     return true;
@@ -70,7 +66,7 @@ export class SocialMediaOptimizer implements OptimizationPlugin {
     return {
       success: true,
       message: `Generated ${count} social media assets`,
-      details: {
+      metrics: {
         improvement: 'Complete social media optimization',
         timeBefore: start,
         timeAfter: Date.now()

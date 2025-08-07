@@ -1,9 +1,9 @@
-import { ReplrodOptimizationPlugin } from './types';
+import { ReplrodOptimizationPlugin } from '@listenrightmeow/replrod/plugin/OptimizationPlugin';
 import { SocialMediaOptimizer } from './SocialMediaOptimizer.js';
 
 const plugin: ReplrodOptimizationPlugin = {
   metadata: {
-    name: '@listenrightmeow/newk-plugin-social-media',
+    name: '@listenrightmeow/replrod-plugin-social-media',
     version: '1.0.0',
     description: 'Social media optimization with OG images, Twitter cards, and favicons for replrod',
     author: '@listenrightmeow',
