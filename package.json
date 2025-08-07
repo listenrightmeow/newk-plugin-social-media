@@ -1,6 +1,6 @@
 {
   "name": "@listenrightmeeow/newk-plugin-social-media",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Social media optimization with Open Graph, Twitter Cards, and dynamic image generation",
   "type": "module",
   "main": "dist/index.js",
