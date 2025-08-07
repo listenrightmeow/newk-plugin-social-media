@@ -1,0 +1,58 @@
+{
+  "name": "@listenrightmeow/newk-plugin-social-media",
+  "version": "0.0.0-semantic-release",
+  "description": "Social media optimization with Open Graph, Twitter Cards, and dynamic image generation",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "echo \"Tests coming soon\"",
+    "lint": "echo \"Linting coming soon\"",
+    "typecheck": "tsc --noEmit",
+    "clean": "rimraf dist",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "newk",
+    "social-media",
+    "open-graph",
+    "twitter-cards",
+    "facebook",
+    "linkedin",
+    "social-sharing",
+    "meta-tags"
+  ],
+  "author": "@listenrightmeow",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/listenrightmeow/newk-plugin-social-media.git"
+  },
+  "bugs": "https://github.com/listenrightmeow/newk-plugin-social-media/issues",
+  "homepage": "https://github.com/listenrightmeow/newk-plugin-social-media#readme",
+  "newk": {
+    "type": "enhancement",
+    "category": "social",
+    "priority": 5
+  },
+  "dependencies": {
+    "fast-glob": "^3.3.3",
+    "sharp": "^0.33.0"
+  },
+  "devDependencies": {
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "@types/sharp": "^0.32.0",
+    "rimraf": "^5.0.0",
+    "semantic-release": "^21.1.2",
+    "typescript": "^5.6.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
