@@ -1,5 +1,5 @@
 {
-  "name": "@listenrightmeow/newk-plugin-social-media",
+  "name": "@listenrightmeeow/newk-plugin-social-media",
   "version": "1.0.0",
   "description": "Social media optimization with Open Graph, Twitter Cards, and dynamic image generation",
   "type": "module",
@@ -27,7 +27,7 @@
     "social-sharing",
     "meta-tags"
   ],
-  "author": "@listenrightmeow",
+  "author": "@listenrightmeeow",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -55,5 +55,8 @@
   },
   "engines": {
     "node": ">=18.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
